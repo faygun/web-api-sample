@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Digiturk.Ino.DesignManagement.Service.DesignManagementService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Digiturk.Ino.DesignManagement.Service.DesignManagementService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Digiturk.Ino.DesignManagement.Service.DesignManagementService/Imports">
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd0" namespace="Digiturk.Ino.DesignManagement.Service.DesignManagementService" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Catalog" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content.Enums" />
+      <xsd:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base.Enums" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDesignManagementService_GetCampaign_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampaign" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetCampaign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackage" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetClientServerUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientServerUrl" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetClientServerUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientServerUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetLanguages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguages" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetLanguages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessages" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParameters" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetParameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParameter" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetParameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPolicies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicies" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPolicies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoliciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetResources_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResources" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetResources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetSocialMediaAccounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSocialMediaAccounts" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetSocialMediaAccounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSocialMediaAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetAnnouncements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncements" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetAnnouncements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetBanners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanners" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetBanners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBannersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMenus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenus" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMenus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenu" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMetaTags_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaTags" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetMetaTags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetaTagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetNews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNews" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetNews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPages" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPage" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetRedirectionRules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRedirectionRules" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetRedirectionRules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRedirectionRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcase_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcase" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcaseNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcaseNew" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcaseNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcaseNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcases_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcases" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_GetShowcases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowcasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_AuthenticateService_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateService" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_AuthenticateService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_ValidateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateToken" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_ValidateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_CreateDefaults_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDefaults" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_CreateDefaults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDefaultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_DropTables_InputMessage">
+    <wsdl:part name="parameters" element="tns:DropTables" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_DropTables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DropTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_InsertRedirectUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRedirectUrl" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_InsertRedirectUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRedirectUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_InsertRedirectUrlV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRedirectUrlV2" />
+  </wsdl:message>
+  <wsdl:message name="IDesignManagementService_InsertRedirectUrlV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRedirectUrlV2Response" />
+  </wsdl:message>
+  <wsdl:portType name="IDesignManagementService">
+    <wsdl:operation name="GetCampaign">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetCampaign" message="tns:IDesignManagementService_GetCampaign_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetCampaignResponse" message="tns:IDesignManagementService_GetCampaign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackage">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPackage" message="tns:IDesignManagementService_GetPackage_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPackageResponse" message="tns:IDesignManagementService_GetPackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientServerUrl">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetClientServerUrl" message="tns:IDesignManagementService_GetClientServerUrl_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetClientServerUrlResponse" message="tns:IDesignManagementService_GetClientServerUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetLanguages" message="tns:IDesignManagementService_GetLanguages_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetLanguagesResponse" message="tns:IDesignManagementService_GetLanguages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMessages" message="tns:IDesignManagementService_GetMessages_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMessagesResponse" message="tns:IDesignManagementService_GetMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParameters">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameters" message="tns:IDesignManagementService_GetParameters_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParametersResponse" message="tns:IDesignManagementService_GetParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameter" message="tns:IDesignManagementService_GetParameter_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameterResponse" message="tns:IDesignManagementService_GetParameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicies">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPolicies" message="tns:IDesignManagementService_GetPolicies_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPoliciesResponse" message="tns:IDesignManagementService_GetPolicies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResources">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetResources" message="tns:IDesignManagementService_GetResources_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetResourcesResponse" message="tns:IDesignManagementService_GetResources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSettings" message="tns:IDesignManagementService_GetSettings_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSettingsResponse" message="tns:IDesignManagementService_GetSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSocialMediaAccounts">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSocialMediaAccounts" message="tns:IDesignManagementService_GetSocialMediaAccounts_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSocialMediaAccountsResponse" message="tns:IDesignManagementService_GetSocialMediaAccounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncements">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetAnnouncements" message="tns:IDesignManagementService_GetAnnouncements_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetAnnouncementsResponse" message="tns:IDesignManagementService_GetAnnouncements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanners">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetBanners" message="tns:IDesignManagementService_GetBanners_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetBannersResponse" message="tns:IDesignManagementService_GetBanners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenus">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenus" message="tns:IDesignManagementService_GetMenus_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenusResponse" message="tns:IDesignManagementService_GetMenus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenu" message="tns:IDesignManagementService_GetMenu_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenuResponse" message="tns:IDesignManagementService_GetMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaTags">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMetaTags" message="tns:IDesignManagementService_GetMetaTags_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMetaTagsResponse" message="tns:IDesignManagementService_GetMetaTags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNews">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetNews" message="tns:IDesignManagementService_GetNews_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetNewsResponse" message="tns:IDesignManagementService_GetNews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPages">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPages" message="tns:IDesignManagementService_GetPages_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPagesResponse" message="tns:IDesignManagementService_GetPages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPage">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPage" message="tns:IDesignManagementService_GetPage_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPageResponse" message="tns:IDesignManagementService_GetPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRedirectionRules">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetRedirectionRules" message="tns:IDesignManagementService_GetRedirectionRules_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetRedirectionRulesResponse" message="tns:IDesignManagementService_GetRedirectionRules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcase">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcase" message="tns:IDesignManagementService_GetShowcase_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcaseResponse" message="tns:IDesignManagementService_GetShowcase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcaseNew">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcaseNew" message="tns:IDesignManagementService_GetShowcaseNew_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcaseNewResponse" message="tns:IDesignManagementService_GetShowcaseNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcases">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcases" message="tns:IDesignManagementService_GetShowcases_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcasesResponse" message="tns:IDesignManagementService_GetShowcases_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateService">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/AuthenticateService" message="tns:IDesignManagementService_AuthenticateService_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/AuthenticateServiceResponse" message="tns:IDesignManagementService_AuthenticateService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/ValidateToken" message="tns:IDesignManagementService_ValidateToken_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/ValidateTokenResponse" message="tns:IDesignManagementService_ValidateToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDefaults">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/CreateDefaults" message="tns:IDesignManagementService_CreateDefaults_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/CreateDefaultsResponse" message="tns:IDesignManagementService_CreateDefaults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DropTables">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/DropTables" message="tns:IDesignManagementService_DropTables_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/DropTablesResponse" message="tns:IDesignManagementService_DropTables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrl">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrl" message="tns:IDesignManagementService_InsertRedirectUrl_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrlResponse" message="tns:IDesignManagementService_InsertRedirectUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrlV2">
+      <wsdl:input wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrlV2" message="tns:IDesignManagementService_InsertRedirectUrlV2_InputMessage" />
+      <wsdl:output wsaw:Action="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrlV2Response" message="tns:IDesignManagementService_InsertRedirectUrlV2_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

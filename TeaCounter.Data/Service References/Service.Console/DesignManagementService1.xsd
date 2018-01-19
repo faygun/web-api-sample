@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" />
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content.Enums" />
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base.Enums" />
+  <xs:complexType name="ArrayOfAnnouncement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Announcement" nillable="true" type="tns:Announcement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnnouncement" nillable="true" type="tns:ArrayOfAnnouncement" />
+  <xs:complexType name="Announcement">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q1:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PlaceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SortOrder" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TextDisplay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Announcement" nillable="true" type="tns:Announcement" />
+  <xs:complexType name="ArrayOfBanner">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Banner" nillable="true" type="tns:Banner" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBanner" nillable="true" type="tns:ArrayOfBanner" />
+  <xs:complexType name="Banner">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q2:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComplementaryColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LinkUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MediaPath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlaceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SortOrder" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Banner" nillable="true" type="tns:Banner" />
+  <xs:complexType name="ArrayOfMenu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Menu" nillable="true" type="tns:Menu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMenu" nillable="true" type="tns:ArrayOfMenu" />
+  <xs:complexType name="Menu">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q3:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="HasItems" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IconPath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAdult" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPvr" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfMenuItem" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlaceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Slug" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content.Enums" minOccurs="0" name="Type" type="q4:MenuType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Menu" nillable="true" type="tns:Menu" />
+  <xs:complexType name="ArrayOfMenuItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MenuItem" nillable="true" type="tns:MenuItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMenuItem" nillable="true" type="tns:ArrayOfMenuItem" />
+  <xs:complexType name="MenuItem">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q5:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoverImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayEndRank" type="xs:int" />
+          <xs:element minOccurs="0" name="DisplayStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartedRank" type="xs:int" />
+          <xs:element minOccurs="0" name="HasSubItems" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IconPath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAdult" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPvr" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Menu" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobileVisibility" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Slug" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="SubItems" nillable="true" type="tns:ArrayOfMenuItem" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Content.Enums" minOccurs="0" name="Type" type="q6:MenuItemType" />
+          <xs:element minOccurs="0" name="Uri" nillable="true" type="xs:string" />
+          <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base.Enums" minOccurs="0" name="UriType" type="q7:UriType" />
+          <xs:element minOccurs="0" name="VisilabsData" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MenuItem" nillable="true" type="tns:MenuItem" />
+  <xs:complexType name="ArrayOfMetaTag">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MetaTag" nillable="true" type="tns:MetaTag" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMetaTag" nillable="true" type="tns:ArrayOfMetaTag" />
+  <xs:complexType name="MetaTag">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q8:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Keywords" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MetaTag" nillable="true" type="tns:MetaTag" />
+  <xs:complexType name="ArrayOfNews">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="News" nillable="true" type="tns:News" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNews" nillable="true" type="tns:ArrayOfNews" />
+  <xs:complexType name="News">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q9:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComplementaryColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LinkUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlaceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="News" nillable="true" type="tns:News" />
+  <xs:complexType name="ArrayOfPage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Page" nillable="true" type="tns:Page" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPage" nillable="true" type="tns:ArrayOfPage" />
+  <xs:complexType name="Page">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q10:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CultureUI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Group" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MainImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MetaTags" nillable="true" type="tns:ArrayOfMetaTag" />
+          <xs:element minOccurs="0" name="NavigationLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SEODescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SEOKeywords" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SEOTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Page" nillable="true" type="tns:Page" />
+  <xs:complexType name="ArrayOfRedirectionRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RedirectionRule" nillable="true" type="tns:RedirectionRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRedirectionRule" nillable="true" type="tns:ArrayOfRedirectionRule" />
+  <xs:complexType name="RedirectionRule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q11:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base.Enums" minOccurs="0" name="Comparison" type="q12:ComparisonType" />
+          <xs:element minOccurs="0" name="NewUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OldUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RedirectionRule" nillable="true" type="tns:RedirectionRule" />
+  <xs:complexType name="Showcase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q13:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientGroup" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="HasItems" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Height" type="xs:int" />
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfShowcaseItem" />
+          <xs:element minOccurs="0" name="PlaceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Width" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Showcase" nillable="true" type="tns:Showcase" />
+  <xs:complexType name="ArrayOfShowcaseItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShowcaseItem" nillable="true" type="tns:ShowcaseItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShowcaseItem" nillable="true" type="tns:ArrayOfShowcaseItem" />
+  <xs:complexType name="ShowcaseItem">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q14:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComplementaryColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Duration" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Showcase" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Uri" nillable="true" type="xs:string" />
+          <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base.Enums" minOccurs="0" name="UriType" type="q15:UriType" />
+          <xs:element minOccurs="0" name="VideoPath" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShowcaseItem" nillable="true" type="tns:ShowcaseItem" />
+  <xs:complexType name="ArrayOfShowcase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Showcase" nillable="true" type="tns:Showcase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShowcase" nillable="true" type="tns:ArrayOfShowcase" />
+</xs:schema>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" />
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" />
+  <xs:complexType name="ClientServer">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q1:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceUniqueId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServerUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClientServer" nillable="true" type="tns:ClientServer" />
+  <xs:complexType name="ArrayOfLanguage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Language" nillable="true" type="tns:Language" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLanguage" nillable="true" type="tns:ArrayOfLanguage" />
+  <xs:complexType name="Language">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q2:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ISOCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Language" nillable="true" type="tns:Language" />
+  <xs:complexType name="ArrayOfMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessage" nillable="true" type="tns:ArrayOfMessage" />
+  <xs:complexType name="Message">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q3:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" minOccurs="0" name="Type" type="q4:MessageType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Message" nillable="true" type="tns:Message" />
+  <xs:complexType name="ArrayOfParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Parameter" nillable="true" type="tns:Parameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParameter" nillable="true" type="tns:ArrayOfParameter" />
+  <xs:complexType name="Parameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q5:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Group" nillable="true" type="xs:string" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" minOccurs="0" name="Type" type="q6:ParameterType" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Parameter" nillable="true" type="tns:Parameter" />
+  <xs:complexType name="ArrayOfPolicy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Policy" nillable="true" type="tns:Policy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolicy" nillable="true" type="tns:ArrayOfPolicy" />
+  <xs:complexType name="Policy">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q7:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Policy" nillable="true" type="tns:Policy" />
+  <xs:complexType name="ArrayOfResource">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Resource" nillable="true" type="tns:Resource" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResource" nillable="true" type="tns:ArrayOfResource" />
+  <xs:complexType name="Resource">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q8:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Resource" nillable="true" type="tns:Resource" />
+  <xs:complexType name="ArrayOfSetting">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Setting" nillable="true" type="tns:Setting" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSetting" nillable="true" type="tns:ArrayOfSetting" />
+  <xs:complexType name="Setting">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q9:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Setting" nillable="true" type="tns:Setting" />
+  <xs:complexType name="ArrayOfSocialMediaAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SocialMediaAccount" nillable="true" type="tns:SocialMediaAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSocialMediaAccount" nillable="true" type="tns:ArrayOfSocialMediaAccount" />
+  <xs:complexType name="SocialMediaAccount">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q10:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApplicationKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApplicationSecretKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ApplicationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DomainUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Icon" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastTransactionDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Provider" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SocialMediaAccount" nillable="true" type="tns:SocialMediaAccount" />
+</xs:schema>

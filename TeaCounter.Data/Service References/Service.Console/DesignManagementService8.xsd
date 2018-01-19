@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Catalog" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Catalog" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" />
+  <xs:complexType name="Campaign">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q1:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoverImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoverSubTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoverTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FAQs" nillable="true" type="tns:ArrayOfCampaignFaq" />
+          <xs:element minOccurs="0" name="Icons" nillable="true" type="tns:ArrayOfCampaignIcon" />
+          <xs:element minOccurs="0" name="Slug" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StrongText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Campaign" nillable="true" type="tns:Campaign" />
+  <xs:complexType name="ArrayOfCampaignFaq">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CampaignFaq" nillable="true" type="tns:CampaignFaq" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampaignFaq" nillable="true" type="tns:ArrayOfCampaignFaq" />
+  <xs:complexType name="CampaignFaq">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q2:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Campaign" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CampaignFaq" nillable="true" type="tns:CampaignFaq" />
+  <xs:complexType name="ArrayOfCampaignIcon">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CampaignIcon" nillable="true" type="tns:CampaignIcon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampaignIcon" nillable="true" type="tns:ArrayOfCampaignIcon" />
+  <xs:complexType name="CampaignIcon">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q3:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Campaign" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HoverImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CampaignIcon" nillable="true" type="tns:CampaignIcon" />
+  <xs:complexType name="Package">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q4:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoverImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FAQs" nillable="true" type="tns:ArrayOfPackageFaq" />
+          <xs:element minOccurs="0" name="Icons" nillable="true" type="tns:ArrayOfPackageIcon" />
+          <xs:element minOccurs="0" name="Slug" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Package" nillable="true" type="tns:Package" />
+  <xs:complexType name="ArrayOfPackageFaq">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PackageFaq" nillable="true" type="tns:PackageFaq" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPackageFaq" nillable="true" type="tns:ArrayOfPackageFaq" />
+  <xs:complexType name="PackageFaq">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q5:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Package" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PackageFaq" nillable="true" type="tns:PackageFaq" />
+  <xs:complexType name="ArrayOfPackageIcon">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PackageIcon" nillable="true" type="tns:PackageIcon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPackageIcon" nillable="true" type="tns:ArrayOfPackageIcon" />
+  <xs:complexType name="PackageIcon">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" base="q6:MultiLanguageEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HoverImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Package" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PackageIcon" nillable="true" type="tns:PackageIcon" />
+</xs:schema>

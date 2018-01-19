@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d5fbca37-6239-4868-8d3f-d0310abfab2e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DesignManagementService.xsd" MetadataType="Schema" ID="4e00b402-958f-4f2c-b40f-8a66519e50a6" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd8" />
+    <MetadataFile FileName="DesignManagementService1.xsd" MetadataType="Schema" ID="21e06d90-e9a7-4cfb-b151-37140f35f7a6" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd6" />
+    <MetadataFile FileName="DesignManagementService2.xsd" MetadataType="Schema" ID="d68f7617-f9ff-4b56-9a53-19bf023e2147" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DesignManagementService.wsdl" MetadataType="Wsdl" ID="eba90d29-0b4f-4df2-b2c4-7e1dd77008a5" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DesignManagementService.disco" MetadataType="Disco" ID="988698b9-f2e8-45d7-9b2c-496a091035d0" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?disco" />
+    <MetadataFile FileName="DesignManagementService3.xsd" MetadataType="Schema" ID="e9c021dc-b030-4805-9e31-79580f6d4c7e" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DesignManagementService4.xsd" MetadataType="Schema" ID="72319f65-218b-4850-bd8f-7c4456fce7a5" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DesignManagementService5.xsd" MetadataType="Schema" ID="6ed33ba7-74ba-4d29-977e-67132f1077f0" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd7" />
+    <MetadataFile FileName="DesignManagementService1.wsdl" MetadataType="Wsdl" ID="df6d9863-694f-4363-a4de-e2951ad63e9b" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?wsdl" />
+    <MetadataFile FileName="DesignManagementService6.xsd" MetadataType="Schema" ID="1732ad14-8bec-4cd9-a9e9-b75b37b2bed6" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd5" />
+    <MetadataFile FileName="DesignManagementService7.xsd" MetadataType="Schema" ID="f8e0dec1-675a-4700-a5f9-17917d883534" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DesignManagementService8.xsd" MetadataType="Schema" ID="53fb7de0-3aae-4239-b1b9-2f76f093dc96" SourceId="1" SourceUrl="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

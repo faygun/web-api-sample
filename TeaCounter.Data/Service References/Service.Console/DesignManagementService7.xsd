@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Base" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MultiLanguageEntity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiLanguageEntity" nillable="true" type="tns:MultiLanguageEntity" />
+  <xs:complexType name="Entity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateModified" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="UserCreated" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserModified" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Entity" nillable="true" type="tns:Entity" />
+</xs:schema>

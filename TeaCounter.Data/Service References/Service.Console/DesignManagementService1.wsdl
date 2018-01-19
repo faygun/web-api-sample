@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="Digiturk.Ino.DesignManagement.Service.DesignManagementService" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DesignManagementService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IDesignManagementService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="Digiturk.Ino.DesignManagement.Service.DesignManagementService" location="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IDesignManagementService" type="i0:IDesignManagementService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCampaign">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackage">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientServerUrl">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetClientServerUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameters">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicies">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPolicies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResources">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetResources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSocialMediaAccounts">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSocialMediaAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncements">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetAnnouncements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanners">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetBanners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenus">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaTags">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMetaTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNews">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetNews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPage">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedirectionRules">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetRedirectionRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcase">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcaseNew">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcaseNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcases">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateService">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/AuthenticateService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/ValidateToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDefaults">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/CreateDefaults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DropTables">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/DropTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrl">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrlV2">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrlV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IDesignManagementService" type="i0:IDesignManagementService">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IDesignManagementService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCampaign">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackage">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientServerUrl">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetClientServerUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameters">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicies">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPolicies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResources">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetResources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSocialMediaAccounts">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetSocialMediaAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncements">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetAnnouncements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanners">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetBanners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenus">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetaTags">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetMetaTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNews">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetNews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPages">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPage">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedirectionRules">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetRedirectionRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcase">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcaseNew">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcaseNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowcases">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/GetShowcases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateService">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/AuthenticateService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/ValidateToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDefaults">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/CreateDefaults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DropTables">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/DropTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrl">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRedirectUrlV2">
+      <soap:operation soapAction="Digiturk.Ino.DesignManagement.Service.DesignManagementService/IDesignManagementService/InsertRedirectUrlV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DesignManagementService">
+    <wsdl:port name="BasicHttpBinding_IDesignManagementService" binding="tns:BasicHttpBinding_IDesignManagementService">
+      <soap:address location="http://dms-service.apactest.beiniz.biz/DesignManagementService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IDesignManagementService" binding="tns:BasicHttpsBinding_IDesignManagementService">
+      <soap:address location="https://dms-service.apactest.beiniz.biz/DesignManagementService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Digiturk.Ino.DesignManagement.Domain.Configuration.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="MessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Error" />
+      <xs:enumeration value="Exclamation" />
+      <xs:enumeration value="Information" />
+      <xs:enumeration value="Marketing" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MessageType" nillable="true" type="tns:MessageType" />
+  <xs:simpleType name="ParameterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Declaration" />
+      <xs:enumeration value="Customization" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ParameterType" nillable="true" type="tns:ParameterType" />
+  <xs:simpleType name="SatelliteType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Eutelsat" />
+      <xs:enumeration value="Turksat" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SatelliteType" nillable="true" type="tns:SatelliteType" />
+</xs:schema>
