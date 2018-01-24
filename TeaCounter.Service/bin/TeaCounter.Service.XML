@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TeaCounter.Service</name>
+    </assembly>
+    <members>
+        <member name="T:TeaCounter.Service.UnityMvcActivator">
+            <summary>
+            Provides the bootstrapping for integrating Unity with ASP.NET MVC.
+            </summary>
+        </member>
+        <member name="M:TeaCounter.Service.UnityMvcActivator.Start">
+            <summary>
+            Integrates Unity when the application starts.
+            </summary>
+        </member>
+        <member name="M:TeaCounter.Service.UnityMvcActivator.Shutdown">
+            <summary>
+            Disposes the Unity container when the application is shut down.
+            </summary>
+        </member>
+        <member name="M:TeaCounter.Service.Controllers.ProductController.GetProduct(System.Int32)">
+            <summary>
+            GetProduct method id is productId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:TeaCounter.Service.Controllers.ProductController.AllProduct">
+            <summary>
+            AllProduct method
+            </summary>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:TeaCounter.Service.Controllers.ProductController.AddProduct(System.String,System.Double)">
+            <summary>
+            AddProduct method name is product name and price is product price
+            </summary>
+            <param name="name"></param>
+            <param name="price"></param>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+    </members>
+</doc>

@@ -22,3 +22,27 @@ c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Da
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Data\obj\Debug\TeaCounter.Data.csprojResolveAssemblyReference.cache
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Data\obj\Debug\TeaCounter.Data.dll
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Data\obj\Debug\TeaCounter.Data.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\TeaCounter.Data.dll.config
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\TeaCounter.Data.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\TeaCounter.Data.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\CommonServiceLocator.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\TeaCounter.Global.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Abstractions.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Configuration.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Container.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Interception.Configuration.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Interception.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.RegistrationByConvention.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.ServiceLocation.dll
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\TeaCounter.Global.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\CommonServiceLocator.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Abstractions.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Configuration.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Container.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Interception.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.Interception.Configuration.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.RegistrationByConvention.pdb
+C:\Projects\WebApi\TeaCounter.Data\bin\Debug\Unity.ServiceLocation.pdb
+C:\Projects\WebApi\TeaCounter.Data\obj\Debug\TeaCounter.Data.csprojResolveAssemblyReference.cache
+C:\Projects\WebApi\TeaCounter.Data\obj\Debug\TeaCounter.Data.dll
+C:\Projects\WebApi\TeaCounter.Data\obj\Debug\TeaCounter.Data.pdb

@@ -23,3 +23,28 @@ c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Bu
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Business\obj\Debug\TeaCounter.Business.csprojResolveAssemblyReference.cache
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Business\obj\Debug\TeaCounter.Business.dll
 c:\users\dtaaygun\documents\visual studio 2015\Projects\TeaCounter\TeaCounter.Business\obj\Debug\TeaCounter.Business.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Business.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Business.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\CommonServiceLocator.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Data.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Global.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Abstractions.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Configuration.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Container.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Interception.Configuration.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Interception.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.RegistrationByConvention.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.ServiceLocation.dll
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Data.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\TeaCounter.Global.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\CommonServiceLocator.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Abstractions.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Configuration.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Container.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Interception.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.Interception.Configuration.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.RegistrationByConvention.pdb
+C:\Projects\WebApi\TeaCounter.Business\bin\Debug\Unity.ServiceLocation.pdb
+C:\Projects\WebApi\TeaCounter.Business\obj\Debug\TeaCounter.Business.csprojResolveAssemblyReference.cache
+C:\Projects\WebApi\TeaCounter.Business\obj\Debug\TeaCounter.Business.dll
+C:\Projects\WebApi\TeaCounter.Business\obj\Debug\TeaCounter.Business.pdb
